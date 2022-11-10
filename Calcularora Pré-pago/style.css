@@ -1,0 +1,85 @@
+*{
+    border: 0;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;  
+}
+body{
+    background: linear-gradient(to left, gray, rgb(49, 31, 49));           
+}
+.titulo{
+    text-align: center;
+    color: white;
+    font-size: 15pt;
+}
+#principal{
+    font-size: 15pt;
+    width: 700px; /*largura*/
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.521);
+    padding-bottom: 1px;
+    padding-top: 1px;
+    margin-top: -5px;   
+} 
+.div-centro{
+    font-size: 15pt;
+    border-radius: 5px;
+    color: white;
+    padding: 15px;
+    width: 600px;
+    margin: auto;
+}
+
+.quadrado-1, .quadrado-2, .quadrado-3 {
+    border-radius: 5px;
+    font-size: 12pt;
+    cursor: pointer;
+}
+.quadrado-2{
+    width: 50px;
+}
+
+.btn-calcular{
+    width: 70px;
+    padding: 5px;
+    font-size: 14pt;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.btn-limpar{
+    width: 70px;
+    padding: 5px;
+    font-size: 14pt;
+    border-radius: 5px;  
+    cursor: pointer;
+    margin-left: 30px;
+}
+.btn-calcular:hover{
+    background-color: rgb(117, 114, 115);
+}
+.btn-limpar:hover{
+    background-color: rgb(117, 114, 115);
+}
+/* quando voce aperta no bota ele vai abaixar */
+.btn-calcular:active{
+    position: relative;
+    top: 5px;
+}
+.btn-limpar:active{
+    position: relative;
+    top: 5px;
+}
+
+.texto{
+    font-size: 15pt;
+    background-color: rgba(228, 210, 210, 0.274);
+    color: white;
+    border-radius: 5px;
+    margin: 5px 30px 5px 30px;
+    text-align: justify;
+    padding: 1px 10px 1px 10px;
+}
+.style{ /* coloca sublinhado nos */
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
