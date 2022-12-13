@@ -38,6 +38,7 @@ let resDoUsoDiarioPlanoDesejado = document.querySelector('span#visualizarValorPl
 let visualizarCalcultoTotal = document.querySelector('#visualizarCalculoTotal')
 let visualizarTotalBoleto = document.querySelector('#visualizarTotalBoleto')
 let visualizarDiferençaBoleto = document.querySelector('#visualizarDiferençaBoleto')
+let visualizarValorTotal = document.querySelector('#visualizarValorTotal')
 
     function calculo() {
         //resDoUsoDiarioPlanoAtual: guardando o valor do calculo e depois ta exibindo na tela #### valor do uso diario
@@ -64,14 +65,21 @@ let visualizarDiferençaBoleto = document.querySelector('#visualizarDiferençaBo
         //depois que coloquei .toFixed(2), ele virou string, usa o Number para fica numero
         let totBoleto = Number(valorTot) + Number(resDosDiasUtilizados.value)
         visualizarTotalBoleto.innerHTML = `Valor Total do Boleto: <strong>${resDosDiasUtilizados.value} + ${valorTot} =  <u>$${totBoleto.toFixed(2)}</u></strong>.`
+        
 
         //quando o plano atual e menor que o plano desejado
         let totdiferenca = (totBoleto - planoAtualSelec.value).toFixed(2)
+        let totalAPagar = Number(planoDesejadoSelect.value) + Number(totdiferenca)
             if (Number(planoAtualSelec.value) <= Number(planoDesejadoSelect.value)) {
                 visualizarDiferençaBoleto.innerHTML = `<strong>Acrescentar</strong> o valor <strong><u> <abbr title="${totBoleto} - ${planoAtualSelec.value}"> $${totdiferenca}</u></strong>, no proximo vencimento do Boleto.`
+                visualizarValorTotal.innerHTML = `Valor total a pagar: ${totalAPagar.toFixed(2)} `
             } else {
                 visualizarDiferençaBoleto.innerHTML = `<strong>Descontar</strong> o valor <strong><u><abbr title="${totBoleto} - ${planoAtualSelec.value}">$${totdiferenca}</u></strong>, no proximo vencimento do Boleto.`
+                visualizarValorTotal.innerHTML = `Valor total a Pagar: ${totalAPagar.toFixed(2)} ` 
             }
+                                
+            
+            
 }
 //Limpar todos os campos
 function limpar() {
