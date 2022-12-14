@@ -11,6 +11,7 @@ body{
     color: white;
     font-size: 20pt;
     margin-top: 10px;
+    margin-bottom: 5px;
 }
 #principal{
     transform:translatex(0px) translatey(-10px);
@@ -36,9 +37,11 @@ body{
     background-color: rgba(228, 210, 210, 0.274);
     color: white;
     border-radius: 5px;
-    margin: 5px 30px 5px 30px;
+    margin: 5px 10px 5px 10px;
     text-align: justify;
     padding: 0px 10px 0px 10px;
+    margin-top: -25px;
+    transform:translatex(0px) translatey(-4px);
 }
 .footer{
     color: white;
@@ -51,7 +54,7 @@ body{
     padding: 1px;
     font-size: 12pt;
     letter-spacing:0.9px;
-    padding-top:15px;
+    padding-top:5px;
     transform:translatex(-8px) translatey(15px);
     margin-left: 5px;
 }
@@ -104,9 +107,6 @@ body{
    #principal h2{
     transform:translatex(0px) translatey(-9px);
    }
-   #principal .texto{
-    transform:translatex(0px) translatey(-4px);
-   }
    #principal .div-centro div{
     transform:translatex(-3px) translatey(-41px);
     padding-right:92px;
@@ -115,8 +115,13 @@ body{
    #principal .div-centro{
     height:283px;
    }
-   
     @media (max-width:650px){
+        .titulo{
+            margin-top: 4px;
+        }
+        .texto{
+            margin-top: -35px;
+        }
     /* Principal */
     #principal{
      width:455px;
@@ -131,12 +136,14 @@ body{
         position: absolute;
         bottom: 0;
         width: 90%;
-        height: 2rem;
+        height: 1rem;
         text-align: center;
         font-size: 13pt;
         letter-spacing:0.9px; 
-        padding-top:15px !important;
+        padding-top:2px;
+        padding-bottom: 0px;
         transform:translatex(-8px) translatey(15px);
         margin-left: 25px;
+        margin-top: 0px;
     }
    }
