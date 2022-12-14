@@ -59,7 +59,7 @@ let visualizarValorTotal = document.querySelector('#visualizarValorTotal')
         //###########CALCULO###############
         let valorTot = (diasRestantes.value * resDoUsoDiarioPlanoDesejado.value).toFixed(2)//calculo
 
-        visualizarCalcultoTotal.innerHTML = `Valor total da Quantidade de dias restantes, Multiplicado pelo valor  diário do plano desejado <abbr title="${diasRestantes.value} X ${resDoUsoDiarioPlanoDesejado.value}"> 
+        visualizarCalcultoTotal.innerHTML = `Valor total da Quantidade de dias restantes, Multiplicado pelo valor  diário do plano desejado: <abbr title="${diasRestantes.value} X ${resDoUsoDiarioPlanoDesejado.value}"> 
         <strong><u>$${valorTot}</u></strong>.`
 
         //depois que coloquei .toFixed(2), ele virou string, usa o Number para fica numero
