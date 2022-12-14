@@ -15,23 +15,22 @@ body{
 #principal{
     transform:translatex(0px) translatey(-10px);
     font-size: 14pt;
-    width: 650px; /*largura*/
+    width: 550px; /*largura*/
     margin: auto;
     background-color: rgba(39, 39, 39, 0.521);
     padding-top: 1px;
-    margin-bottom: 0px;
+    margin-top: 15px;
+    margin-bottom: 1px;
     border-radius: 5px;
-    box-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 6px black;
 } 
 .div-centro{
     font-size: 14pt;
     border-radius: 5px;
     color: white;
     padding: 15px;
-    width: 600px;
-    margin: auto;
+    width: 90%;    
 }
-
 .texto{
     font-size: 15pt;
     background-color: rgba(228, 210, 210, 0.274);
@@ -47,27 +46,26 @@ body{
     position: absolute;
     bottom: 0;
     width: 99%;
-    height: 2.5rem;
+    height: 2rem;
     text-align: center;
     padding: 1px;
-    font-size: 18pt;
+    font-size: 12pt;
     letter-spacing:0.9px;
-    padding-top:15px !important;
+    padding-top:15px;
+    transform:translatex(-8px) translatey(15px);
+    margin-left: 5px;
 }
-
 .quadrado-1, .quadrado-2, .quadrado-3 {
     border-radius: 5px;
     font-size: 12pt;
     cursor: pointer;
 }
-
 .btn-calcular{
     width: 70px;
     padding: 5px;
     font-size: 14pt;
     border-radius: 5px;
-    cursor: pointer;
-    
+    cursor: pointer; 
 }
 .btn-limpar{
     width: 70px;
@@ -102,12 +100,10 @@ body{
     transform:translatex(-5px) translatey(-40px);
     padding-bottom:0px;
    }
-   
    /* Heading */
    #principal h2{
     transform:translatex(0px) translatey(-9px);
    }
-
    #principal .texto{
     transform:translatex(0px) translatey(-4px);
    }
@@ -115,35 +111,32 @@ body{
     transform:translatex(-3px) translatey(-41px);
     padding-right:92px;
     width:438px;
-
    }
    #principal .div-centro{
     height:283px;
    }
    
-    @media (max-width:500px){
-
+    @media (max-width:650px){
     /* Principal */
     #principal{
-     width:485px;
+     width:455px;
     }
-    
-    /* Heading */
-    #principal h2{
-     transform:translatex(0px) translatey(-15px);
-    }
-    #principal .div-centro div{
-        width:416px;
-       }
-       
        /* Div centro */
-       #principal .div-centro{
-        width:496px;
-       }
        #principal .div-centro div{
-        width:311px;
+        width:350px; 
        }
+       .footer{
+        color: white;
+        background-color: rgba(39, 39, 39, 0.521);
+        position: absolute;
+        bottom: 0;
+        width: 90%;
+        height: 2rem;
+        text-align: center;
+        font-size: 13pt;
+        letter-spacing:0.9px; 
+        padding-top:15px !important;
+        transform:translatex(-8px) translatey(15px);
+        margin-left: 25px;
+    }
    }
- 
-   
-   
