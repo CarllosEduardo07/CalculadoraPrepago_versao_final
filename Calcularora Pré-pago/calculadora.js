@@ -72,10 +72,10 @@ let visualizarValorTotal = document.querySelector('#visualizarValorTotal')
         let totalAPagar = Number(planoDesejadoSelect.value) + Number(totdiferenca)
             if (Number(planoAtualSelec.value) <= Number(planoDesejadoSelect.value)) {
                 visualizarDiferençaBoleto.innerHTML = `<strong>Acrescentar</strong> o valor <strong><u> <abbr title="${totBoleto} - ${planoAtualSelec.value}"> $${totdiferenca}</u></strong>, no proximo vencimento do Boleto.`
-                visualizarValorTotal.innerHTML = `Valor total a pagar: ${totalAPagar.toFixed(2)} `
+                visualizarValorTotal.innerHTML = `Valor total a Pagar: <u>$<abbr title="${planoDesejadoSelect.value} - ${totdiferenca}">${totalAPagar.toFixed(2)}</u>` 
             } else {
                 visualizarDiferençaBoleto.innerHTML = `<strong>Descontar</strong> o valor <strong><u><abbr title="${totBoleto} - ${planoAtualSelec.value}">$${totdiferenca}</u></strong>, no proximo vencimento do Boleto.`
-                visualizarValorTotal.innerHTML = `Valor total a Pagar: ${totalAPagar.toFixed(2)} ` 
+                visualizarValorTotal.innerHTML = `Valor total a Pagar: <u>$<abbr title="${planoDesejadoSelect.value} - ${totdiferenca}">${totalAPagar.toFixed(2)}</u>` 
             }
                                 
             
@@ -98,4 +98,5 @@ function limpar() {
     visualizarCalcultoTotal.innerHTML = '';
     visualizarTotalBoleto.innerHTML = '';
     visualizarDiferençaBoleto.innerHTML = '';
+    visualizarValorTotal.innerHTML = '';
 }
