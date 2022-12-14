@@ -103,6 +103,19 @@ body{
     height:283px;
    }
    
+   @media (max-width:580px){
+
+    /* Principal */
+    #principal{
+     width:441px;
+    }
+    
+    /* Heading */
+    #principal h2{
+     transform:translatex(0px) translatey(-15px);
+    }
+    
+   }
  
    
    
