@@ -59,14 +59,13 @@ let visualizarValorTotal = document.querySelector('#visualizarValorTotal')
         //###########CALCULO###############
         let valorTot = (diasRestantes.value * resDoUsoDiarioPlanoDesejado.value).toFixed(2)//calculo
 
-        visualizarCalcultoTotal.innerHTML = `Valor total da Quantidade de dias, Multiplicado pelo valor  diário do plano desejado <strong>${diasRestantes.value} X $${resDoUsoDiarioPlanoDesejado.value} = 
-            <u>$${valorTot}</u></strong>.`
+        visualizarCalcultoTotal.innerHTML = `Valor total da Quantidade de dias restantes, Multiplicado pelo valor  diário do plano desejado <abbr title="${diasRestantes.value} X ${resDoUsoDiarioPlanoDesejado.value}"> 
+        <strong><u>$${valorTot}</u></strong>.`
 
         //depois que coloquei .toFixed(2), ele virou string, usa o Number para fica numero
         let totBoleto = Number(valorTot) + Number(resDosDiasUtilizados.value)
         visualizarTotalBoleto.innerHTML = `Valor Total do Boleto: <strong>${resDosDiasUtilizados.value} + ${valorTot} =  <u>$${totBoleto.toFixed(2)}</u></strong>.`
         
-
         //quando o plano atual e menor que o plano desejado
         let totdiferenca = (totBoleto - planoAtualSelec.value).toFixed(2)
         let totalAPagar = Number(planoDesejadoSelect.value) + Number(totdiferenca)
@@ -76,10 +75,7 @@ let visualizarValorTotal = document.querySelector('#visualizarValorTotal')
             } else {
                 visualizarDiferençaBoleto.innerHTML = `<strong>Descontar</strong> o valor <strong><u><abbr title="${totBoleto} - ${planoAtualSelec.value}">$${totdiferenca}</u></strong>, no proximo vencimento do Boleto.`
                 visualizarValorTotal.innerHTML = `Valor total a Pagar: <u>$<abbr title="${planoDesejadoSelect.value} - ${totdiferenca}">${totalAPagar.toFixed(2)}</u>` 
-            }
-                                
-            
-            
+            }            
 }
 //Limpar todos os campos
 function limpar() {

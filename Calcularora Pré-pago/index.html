@@ -7,92 +7,93 @@
     <title>Calcular plano Pré-pago</title>
     <script src="calculadora.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon/Calculadora.png" type="image/x-icon">
 </head>
 <body>
         <div id="principal">
-            <div class="titulo"><h2>Calcular plano Pré-pago</h2></div>
+            <h2 class="titulo">Calcular plano Pré-pago</h2>
             <div class="div-centro">
                 <!--part 1-->
-                    <label for="Valor do Plano">Selecione o <strong>Plano Atual:</strong></label>
-                    <select name="planoatual" id="planoatual" class="quadrado-1">
-                        <option value=""></option>
-                        <option value="59.90">59,90</option>
-                        <option value="69.90">69,90</option>
-                        <option value="79.90">79,90</option>
-                        <option value="89.90">89,90</option>
-                        <option value="99.90">99,90</option>
-                        <option value="109.90">109,90</option>
-                        <option value="119.90">119,90</option>
-                        <option value="124.90">124,90</option>
-                        <option value="149.90">149,90</option>
-                        <option value="199.90">199,90</option>
-                        <option value="219.90">219,90</option>
-                        <option value="249.90">249,90</option>
-                    </select>
-                <p>Valor do uso diario do plano atual: <span id="visualizarValorPlanoAtual" class="style"></span></p>
-                <br>
-                <br>
+                    <div>
+                        <label for="Valor do Plano">Selecione o <strong>Plano Atual:</strong></label>
+                        <select name="planoatual" id="planoatual" class="quadrado-1">
+                            <option value=""></option>
+                            <option value="59.90">59,90</option>
+                            <option value="69.90">69,90</option>
+                            <option value="79.90">79,90</option>
+                            <option value="89.90">89,90</option>
+                            <option value="99.90">99,90</option>
+                            <option value="109.90">109,90</option>
+                            <option value="119.90">119,90</option>
+                            <option value="124.90">124,90</option>
+                            <option value="149.90">149,90</option>
+                            <option value="199.90">199,90</option>
+                            <option value="219.90">219,90</option>
+                            <option value="249.90">249,90</option>
+                        </select>
+                            <p>Valor do uso diario do plano atual: <span id="visualizarValorPlanoAtual" class="style"></span></p>
+                    </div>
                 <!--part 2-->
-                    <label for="Dias de Uso">Quantidade de <strong>dias utilizados no Plano Atual:</strong></label>
-                    <select name="dias de uso" id="diasdeuso" class="quadrado-2">
-                        <option value=""></option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                    </select>
-                <p>Valor dos dias utilizados: <span id="visualizarValorDiasUtilizados" class="style"></span></p>
-                <!--dias restantes-->
-                <p>Dias restantes: <span id="visualizarDiasQueRestam" class="style"></span> </p>
-                    <br>
-                    <br>
+                    <div>
+                        <label for="Dias de Uso">Quantidade de <strong>dias utilizados no Plano Atual:</strong></label>
+                        <select name="dias de uso" id="diasdeuso" class="quadrado-2">
+                            <option value=""></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                        </select>
+                            <p>Valor dos dias utilizados: <span id="visualizarValorDiasUtilizados" class="style"></span></p>
+                            <!--dias restantes-->
+                            <p>Dias restantes: <span id="visualizarDiasQueRestam" class="style"></span></p>
+                    </div>
                 <!--part 3-->
-                    <label for="planodesejado">Selecione <strong>Plano Desejado:</strong></label>
-                    <select name="Plano desejato" id="planodesejado" class="quadrado-3">
-                        <option value=""></option>
-                        <option value="79.90">79,90</option>
-                        <option value="89.90">89,90</option>
-                        <option value="99.90">99,90</option>
-                        <option value="109.90">109,90</option>
-                        <option value="119.90">119,90</option>
-                        <option value="124.90">124,90</option>
-                        <option value="149.90">149,90</option>
-                        <option value="199.90">199,90</option>
-                        <option value="219.90">219,90</option>
-                        <option value="249.90">249,90</option>
-                    </select>
-                    <p>Valor do uso diario do plano desejado: <span id="visualizarValorPlanoDesejado" class="style"></span></p>
-                    <!--part 5-->
+                    <div>
+                        <label for="planodesejado">Selecione <strong>Plano Desejado:</strong></label>
+                        <select name="Plano desejato" id="planodesejado" class="quadrado-3">
+                            <option value=""></option>
+                            <option value="79.90">79,90</option>
+                            <option value="89.90">89,90</option>
+                            <option value="99.90">99,90</option>
+                            <option value="109.90">109,90</option>
+                            <option value="119.90">119,90</option>
+                            <option value="124.90">124,90</option>
+                            <option value="149.90">149,90</option>
+                            <option value="199.90">199,90</option>
+                            <option value="219.90">219,90</option>
+                            <option value="249.90">249,90</option>
+                        </select>
+                        <p>Valor do uso diario do plano desejado: <span id="visualizarValorPlanoDesejado" class="style"></span></p>
                         <button onclick="validacao() ? calculo() : null " class="btn-calcular">Calular</button>
-                        
                         <button  onclick="limpar()" class="btn-limpar" >Limpar</button>
+                    </div>
+                    <!--part 5-->
             </div>
                     <div class="texto">
                         <p><span id="visualizarCalculoTotal"></span></p>
@@ -101,6 +102,6 @@
                         <p><span id="visualizarValorTotal"></span></p>
                     </div>
         </div>
-        <br>
+
 </body>
 </html>

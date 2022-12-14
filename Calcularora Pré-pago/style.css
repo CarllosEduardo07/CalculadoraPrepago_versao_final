@@ -8,16 +8,18 @@ body{
 .titulo{
     text-align: center;
     color: white;
-    font-size: 15pt;
+    font-size: 20pt;
 }
 #principal{
+    transform:translatex(0px) translatey(-10px);
     font-size: 15pt;
-    width: 700px; /*largura*/
+    width: 650px; /*largura*/
     margin: auto;
     background-color: rgba(0, 0, 0, 0.521);
-    padding-bottom: 1px;
     padding-top: 1px;
-    margin-top: -5px;   
+    margin-bottom: 0px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
 } 
 .div-centro{
     font-size: 15pt;
@@ -28,13 +30,20 @@ body{
     margin: auto;
 }
 
+.texto{
+    font-size: 15pt;
+    background-color: rgba(228, 210, 210, 0.274);
+    color: white;
+    border-radius: 5px;
+    margin: 5px 30px 5px 30px;
+    text-align: justify;
+    padding: 0px 10px 0px 10px;
+}
+
 .quadrado-1, .quadrado-2, .quadrado-3 {
     border-radius: 5px;
     font-size: 12pt;
     cursor: pointer;
-}
-.quadrado-2{
-    width: 50px;
 }
 
 .btn-calcular{
@@ -68,18 +77,32 @@ body{
     position: relative;
     top: 5px;
 }
-
-.texto{
-    font-size: 15pt;
-    background-color: rgba(228, 210, 210, 0.274);
-    color: white;
-    border-radius: 5px;
-    margin: 5px 30px 5px 30px;
-    text-align: justify;
-    padding: 1px 10px 1px 10px;
-}
-.style{ /* coloca sublinhado nos */
+ /* coloca sublinhado nos */
+.style{
     text-decoration: underline;
     font-weight: bold;
     cursor: pointer;
 }
+#principal .div-centro div{
+    transform:translatex(-5px) translatey(-40px);
+    padding-bottom:0px;
+   }
+   
+   /* Heading */
+   #principal h2{
+    transform:translatex(0px) translatey(-9px);
+   }
+
+   #principal .texto{
+    transform:translatex(0px) translatey(-4px);
+   }
+   #principal .div-centro div{
+    transform:translatex(-3px) translatey(-41px);
+   }
+   #principal .div-centro{
+    height:283px;
+   }
+   
+ 
+   
+   
